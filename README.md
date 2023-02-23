@@ -1,7 +1,10 @@
 # Lenovo-X1C7-20R1-Hackintosh
-MacOS Opencore EFI configuration for the Lenovo Thinkpad X1 Carbon (7th Gen)
+MacOS Opencore EFI configuration for Lenovo Thinkpad X1 Carbon (7th Gen)
 
-Using opencore 8.9, booting MacOS Monterey
+Using Opencore 8.9, booting MacOS Monterey
+
+This repo serves as a reference/guide for beginners with the same/similar hardware as me (optimally same CPU and iGPU). Check out the much better documented X1C7 repos for a more thorough explanation on why certain kexts were used and why certain features will not work.
+
 
 All needed files were gathered by following the Dortania install guide: https://dortania.github.io/OpenCore-Install-Guide/
 
@@ -41,7 +44,7 @@ Ethernet: Intel 82574IT Gigabit Ethernet Controller
 Initially, the UHD graphics were not being used by MacOS due to an error in my config. 
 - integrated graphics support was enabled by modifying my original config file using values from: https://elitemacx86.com/threads/how-to-enable-intel-uhd-graphics-comet-lake-on-macos-big-sur-and-later.897/
 
-REMINDER: This setup will likely not install MacOS for you unless you are using the exact same CPU model, bios settings, and MacOS version. So please use this only as a reference.
+REMINDER: This setup will likely not install MacOS for you unless you are using the exact same CPU model (WITH SAME iGPU), bios settings, and MacOS version. So please use this only as a reference.
 
 Wifi, and most essentials should be working (haven't fully tested)
 - Audio setup is not making full use of the speakers, so audio quality is noticeably worse (but still usable)
@@ -60,5 +63,5 @@ What isn't working:
 - Microphone
 
 
-Uploaded Opencore bootloader is in debug mode, if you manage to get it working on your machine then follow the official guide to complete the installation and turn off debug mode
+Uploaded Opencore bootloader is in debug mode. If you manage to get my EFI folder to boot on your machine, then follow the official guide to complete the installation and turn off debug mode.
 
