@@ -2,6 +2,7 @@
 MacOS Opencore EFI configuration for the Lenovo Thinkpad X1 Carbon (7th Gen)
 
 Using opencore 8.9, booting MacOS Monterey
+
 All needed files were gathered by following the Dortania install guide: https://dortania.github.io/OpenCore-Install-Guide/
 
 The EFI folder was built (basically) from scratch using only the official opencore guide, so this should be a very minimally bloated setup for booting Monterey.
