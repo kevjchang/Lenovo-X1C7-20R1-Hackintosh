@@ -47,7 +47,7 @@ Initially, the UHD graphics were not being used by MacOS due to an error in my c
 REMINDER: This setup will likely not install MacOS for you unless you are using the exact same CPU model (WITH SAME iGPU), bios settings, and MacOS version. So please use this only as a reference.
 
 Wifi, and most essentials should be working (haven't fully tested)
-- Audio setup is not making full use of the speakers, so audio quality is noticeably worse (but still usable)
+- Audio setup is not making full use of the speakers, so audio quality is noticeably worse (but still usable). The audio setup can be changed by changing the alcid value in config.plist, haven't yet tested other audio arrangements so I don't know how much better/worse the audio could be adjusted.
 
 Not tested:
 - Bluetooth (other devices show up, just haven't tried pairing yet)
@@ -57,8 +57,7 @@ Not tested:
 - Apple services (should work with proper SMBIOS)
 
 What isn't working:
-- Airdrop
-- Lenovo trackpoint
+- Airdrop (will probably need to switch wifi card)
 - Fingerprint reader
 - Microphone
 
