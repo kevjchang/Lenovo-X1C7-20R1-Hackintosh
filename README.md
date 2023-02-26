@@ -64,3 +64,4 @@ What isn't working:
 
 Uploaded Opencore bootloader is in debug mode. If you manage to get my EFI folder to boot on your machine, then follow the official guide to complete the installation and turn off debug mode.
 
+To successfully enable dual boot using opencore, you must set LauncherOption to "Full" in config.plist.
