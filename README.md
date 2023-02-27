@@ -49,19 +49,21 @@ REMINDER: This setup will likely not install MacOS for you unless you are using 
 Wifi, and most essentials should be working (haven't fully tested)
 - Audio setup is not making full use of the speakers, so audio quality is noticeably worse (but still usable). The audio setup can be changed by changing the alcid value in config.plist, haven't yet tested other audio arrangements so I don't know how much better/worse the audio could be adjusted.
 
+Working:
+- Wifi/Bluetooth
+- Sidecar (only when connected through cable, with thunderbolt enabled in bios security settings)
+- Apple services (must generate valid SMBIOS first)
+
 Not tested:
-- Bluetooth (other devices show up, just haven't tried pairing yet)
 - Headphone jack
-- HDMI
-- Sidecar
-- Apple services (should work with proper SMBIOS)
 
 What isn't working:
-- Airdrop (will probably need to switch wifi card)
+- HDMI port (probably missing some kexts, could probably work with extra kexts/config settings added)
+- Airdrop (will probably need to switch wifi/bluetooth card)
 - Fingerprint reader
 - Microphone
 
 
-Uploaded Opencore bootloader is in debug mode. If you manage to get my EFI folder to boot on your machine, then follow the official guide to complete the installation and turn off debug mode.
+Uploaded Opencore bootloader is in debug mode. If you get the EFI folder booted on your machine, then follow the official guide to complete the installation and turn off debug mode.
 
 To successfully enable dual boot using opencore, you must set LauncherOption to "Full" in config.plist.
