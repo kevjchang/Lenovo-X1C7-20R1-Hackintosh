@@ -54,12 +54,9 @@ Working:
 - Sidecar (only when connected through cable, with thunderbolt enabled in bios security settings)
 - Apple services (must generate valid SMBIOS first)
 
-Not tested:
-- Headphone jack
-
 What isn't working:
 - HDMI port (probably missing some kexts, could probably work with extra kexts/config settings added)
-- Airdrop (will probably need to switch wifi/bluetooth card)
+- Airdrop (will probably need to switch wifi/bluetooth card. If bluetooth card is swapped, wireless sidecar should also work)
 - Fingerprint reader
 - Microphone
 
