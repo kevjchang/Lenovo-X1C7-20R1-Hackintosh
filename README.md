@@ -53,14 +53,14 @@ Working:
 - Wifi/Bluetooth
 - Sidecar (only when connected through cable, with thunderbolt enabled in bios security settings)
 - Apple services (must generate valid SMBIOS first)
+- HDMI port (However it takes longer to connect to external display than on Windows 11, and disconnecting HDMI causes the laptop display to go black for 1-2 minutes before resuming normal function)
 
 What isn't working:
-- HDMI port (probably missing some kexts, could probably work with extra kexts/config settings added)
 - Airdrop (will probably need to switch wifi/bluetooth card. If bluetooth card is swapped, wireless sidecar should also work)
 - Fingerprint reader
 - Microphone
 
 
-Uploaded Opencore bootloader is in debug mode. If you get the EFI folder booted on your machine, then follow the official guide to complete the installation and turn off debug mode.
+Uploaded Opencore bootloader is in release mode. I suggest downloading the debug version of Opencore and replacing the config.list, ACPI, Kext, and Driver files (except OpenCanopy.efi) with mine if you are installing for the first time.
 
-To successfully enable dual boot using opencore, you must set LauncherOption to "Full" in config.plist.
+To successfully enable dual boot using opencore, you must set LauncherOption to "Full" in config.plist, reset NVRAM, and boot into MacOS once to create the opencore boot path in BIOS. Once that has been done, mount the efi (see the official opencore post-install guide for more info) and you can then partition and install Windows/other OSes onto the same drive.
